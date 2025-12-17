@@ -39,6 +39,119 @@ https://templatemo.com/tm-570-chain-app-dev
     <link rel="stylesheet" href="/Green Dentistry/assets/css/bg.css">
 
     <style>
+/* ===== Acknowledgment Section ===== */
+.ack-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+}
+
+.ack-container {
+  background: #ffffff;
+  max-width: 800px;
+  margin: auto;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.ack-container h1 {
+  color: #2e7d32;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.ack-container h2 {
+  color: #388e3c;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.ack-container p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.department {
+  font-weight: 600;
+  color: #1b5e20;
+}
+
+.doctors {
+  list-style: none;
+  margin: 30px 0;
+  padding: 0;
+}
+
+.doctors li {
+  font-size: 1.1rem;
+  color: #2e7d32;
+  margin: 12px 0;
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.doctors li:nth-child(1) { animation-delay: 0.4s; }
+.doctors li:nth-child(2) { animation-delay: 0.7s; }
+.doctors li:nth-child(3) { animation-delay: 1s; }
+.doctors li:nth-child(4) { animation-delay: 1.3s; }
+
+.signature {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #388e3c;
+  font-weight: 600;
+}
+
+.leaf {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .ack-container {
+    padding: 35px 25px;
+  }
+
+  .ack-container h1 {
+    font-size: 2rem;
+  }
+}
+      
       .logo img {
         max-height: 76px;
         /* desktop: reduced to 76px as requested */
@@ -716,7 +829,39 @@ https://templatemo.com/tm-570-chain-app-dev
       </div>
     </div>
 
+<section class="ack-section">
 
+  <div class="ack-container">
+    <div class="leaf">🌿</div>
+
+    <h1>Acknowledgment</h1>
+    <h2>With Our Sincere Gratitude</h2>
+
+    <p>
+      We would like to express our deepest appreciation to the
+      <span class="department">Department of Pedodontics</span>
+      for their continuous support, guidance, and dedication to dental education
+      and child oral health.
+    </p>
+
+    <p>
+      We are truly grateful for the invaluable efforts, academic excellence,
+      and inspiration provided by the following respected doctors:
+    </p>
+
+    <ul class="doctors">
+      <li>دينا يسري الخرادلي</li>
+      <li>دينا عبد الغني</li>
+      <li>هالة محي الدين عباس</li>
+      <li>ندي عادل سالم</li>
+    </ul>
+
+    <div class="signature">
+      Green Dentistry Team
+    </div>
+  </div>
+
+</section>
 
     <footer id="newsletter">
       <div class="container">
@@ -954,5 +1099,6 @@ https://templatemo.com/tm-570-chain-app-dev
     </script>
 
   </body>
+
 
 </html>
